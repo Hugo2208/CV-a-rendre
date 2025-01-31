@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faux CV - Brendan Eich</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f4a261, #e76f51);
+            color: #fdfdfd;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            object-fit: cover;
+            animation: bounceIn 1.5s ease;
+        }
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+        .header p {
+            margin: 5px 0;
+            color: #555;
+        }
+        h2 {
+            color: #e76f51;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease forwards;
+        }
+        .section:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+        .section:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        p {
+            margin: 0.5em 0;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #333;
+        }
+        .skills ul {
+            list-style-type: square;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- En-tête avec photo -->
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/BEich.jpg" alt="Photo de Brendan Eich">
+            <div>
+                <h1>Brendan Eich</h1>
+                <p class="contact-info">📧 brendan.eich@projetNSI.com | 📞 415-480-0000 | 📍 Silicon Valley, Californie</p>
+            </div>
+        </div>
+        
+        <!-- Résumé -->
+        <div class="section">
+            <h2>Résumé</h2>
+            <p>Créateur du langage JavaScript et cofondateur de Mozilla Corporation, Brendan Eich est un développeur et leader visionnaire dans le domaine des technologies web.</p>
+            <p>Pour plus d'informations, visitez sa <a href="https://fr.wikipedia.org/wiki/Brendan_Eich" target="_blank" style="color: #007BFF;">page Wikipédia</a>.</p>
+        </div>
+
+        <!-- Expérience -->
+        <div class="section">
+            <h2>Expérience</h2>
+            <p><strong>PDG</strong> — Brave Software, Californie </p>
+            <p>Dirige le développement de Brave, un navigateur axé sur la protection de la vie privée, et de solutions innovantes pour améliorer la publicité en ligne grâce aux technologies blockchain.</p>
+
+            <p><strong>CTO</strong> — Mozilla Corporation, Californie (2005 - 2014)</p>
+            <p>A supervisé la conception et l'implémentation de technologies clés pour le navigateur Firefox, consolidant sa position comme alternative open source majeure à Internet Explorer.</p>
+
+            <p><strong>Créateur de JavaScript</strong> — Netscape Communications, Californie (1995)</p>
+            <p>A conçu et développé JavaScript en 10 jours pour rendre le web interactif. Le langage est aujourd'hui omniprésent dans le développement web.</p>
+        </div>
+
+        <!-- Études -->
+        <div class="section">
+            <h2>Études</h2>
+            <p><strong>Master en Sciences Informatiques</strong> — Université de l'Illinois, Urbana-Champaign (1985)</p>
+            <p>Spécialisation en langages de programmation et en génie logiciel.</p>
+        </div>
+
+        <!-- Compétences -->
+        <div class="section skills">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Création de langages de programmation (JavaScript)</li>
+                <li>Développement de navigateurs (Netscape, Firefox, Brave)</li>
+                <li>Leadership en technologies open source</li>
+                <li>Blockchain et protection de la vie privée</li>
+            </ul>
+        </div>
+
+        <!-- Loisirs -->
+        <div class="section">
+            <h2>Loisirs</h2>
+            <p>Conception de langages, contribution aux projets open source, réflexion sur les innovations technologiques et la vie privée en ligne.</p>
+        </div>
+    </div>
+    
+    <footer>
+        © 2025 - Faux CV de Brendan Eich | Créé dans le cadre d'un projet NSI
+    </footer>
+</body>
+</html>
